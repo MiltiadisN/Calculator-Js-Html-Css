@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(to left, #053733, #1a4a45, #2c5e58, #3f736b, #52897f);
+    margin: 0;
+	padding: 0;
+}
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4,130px);
+    grid-template-rows: repeat(6,130px);
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.calculator-output {
+    grid-column: 1 /span 4; /* begins from 1 column and goes till 4 column */
+    grid-row: 1 / 2; /* begins from 1 row and ends in 2 row */
+    background: black;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    padding: 5px;
+    text-align: end;
+
+
+}
+
+.calculator_key, .calculator_operator, .calculator_operator_enter{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.calculator_operator_enter{
+    grid-column: 4 / 4; 
+    grid-row: 3 /  6; /* begins from 3 row and ends in 6 row */
+}
+
